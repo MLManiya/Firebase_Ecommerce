@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "621672172137",
+    "firebase_url": "https://milanfirebaseecommerce-default-rtdb.firebaseio.com",
+    "project_id": "milanfirebaseecommerce",
+    "storage_bucket": "milanfirebaseecommerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621672172137:android:3045230ece6c5329fc70f8",
+        "android_client_info": {
+          "package_name": "com.example.firebase_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621672172137-hp51qkd6gqe7e3g0jb4gu6hkm1num1n2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_ecommerce",
+            "certificate_hash": "fe10c5f59e168cdb878897e2899a323f2a4cf22a"
+          }
+        },
+        {
+          "client_id": "621672172137-9rr04b2tfla1mplqaclugi8jpt7skl4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmw6wdX1UJXZi02HR7DysrCeQCWj4GY7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621672172137-9rr04b2tfla1mplqaclugi8jpt7skl4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
