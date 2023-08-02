@@ -48,36 +48,13 @@ public class AddProductFragment extends Fragment {
         submitbutton = view.findViewById(R.id.submitproduct);
         // Inflate the layout for this fragment
 
-//        database = FirebaseDatabase.getInstance();
-//        myRef = database.getReference("message");
-//
-//        myRef.setValue("Hello, World!");
-//        Log.d("TTT", "onCreateView: ooo"+myRef);
-        //addFragment(fragment);
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
+        Log.d("TTT", "onCreateView: ooo"+myRef);
+
         return inflater.inflate(R.layout.fragment_add_product, container, false);
     }
-    private void addFragment(Fragment fragment) {
-        FragmentManager fm = getParentFragmentManager();
-        FragmentTransaction transaction = fm.beginTransaction();
-        transaction.replace(R.id.framelayout,fragment);
-        transaction.commit();
+
     }
-//    void imageChooser() {
-//        CropImage.activity()
-//                .start(getContext(), this);
-//    }
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
-//            CropImage.ActivityResult result = CropImage.getActivityResult(data);
-//            if (resultCode == RESULT_OK) {
-//                Uri resultUri = result.getUri();
-//                imageView.setImageURI(resultUri);
-//            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
-//                Exception error = result.getError();
-//            }
-//        }
-//
-//    }
-}

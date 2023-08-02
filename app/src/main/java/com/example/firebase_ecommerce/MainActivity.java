@@ -66,13 +66,15 @@ public class MainActivity extends AppCompatActivity {
                     binding.drawerLayout.closeDrawers();
                 }
                 if(item.getItemId()==R.id.nav_addproduct){
+
                     addfragment(new AddProductFragment());
+                    Log.d("TTT", "onNavigationItemSelected: ");
                    // Splash_Screen.editor.putString("from","add");
                     binding.drawerLayout.closeDrawers();
                 }
                 if(item.getItemId()==R.id.nav_slideshow){
                     addfragment(new SlideshowFragment());
-                   // Splash_Screen.editor.putString("from","update");
+
                     binding.drawerLayout.closeDrawers();
                 }
 //                if(item.getItemId()==R.id.signout){
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_addproduct, R.id.nav_slideshow)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.framelayout);
